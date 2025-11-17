@@ -1,0 +1,2 @@
+# Business-Sales-Dashboard-Power-BI-Excel
+This project includes a half-year synthetic dataset, guides to build dashboards in Excel and Power BI, DAX formulas, and data preparation scripts. Use the provided CSV or replace with Microsoft sample data to build interactive dashboards.
