@@ -1,0 +1,18 @@
+Power BI Dashboard Guide
+
+1. Open Power BI Desktop.
+2. Get Data -> CSV -> select data/business_sales_data.csv (or import your downloaded Microsoft sample .pbix/.xlsx).
+3. Build relationships between tables if you imported multiple tables.
+4. Recommended visuals:
+   - Line chart: Revenue over time (OrderDate)
+   - Stacked bar: Revenue by Region and ProductCategory
+   - Matrix: Top products by revenue and profit
+   - Map: Region revenue (if you have geo fields)
+5. Add slicers: Region, ProductCategory, CustomerSegment
+
+DAX examples (add to Power BI as new measures):
+Total Revenue = SUM('business_sales_data'[Revenue])
+Total Profit = SUM('business_sales_data'[Profit])
+Profit Margin = DIVIDE([Total Profit], [Total Revenue])
+Previous Month Revenue = CALCULATE([Total Revenue], PREVIOUSMONTH('business_sales_data'[OrderDate]))
+MoM Growth % = DIVIDE([Total Revenue] - [Previous Month Revenue], [Previous Month Revenue])
