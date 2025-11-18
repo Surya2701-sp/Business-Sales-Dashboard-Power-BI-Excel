@@ -1,4 +1,5 @@
 # Data Dictionary
+Column Explanations
 OrderDate: Date of transaction (YYYY-MM-DD)
 Region: Sales region (North, South, East, West)
 ProductCategory: Product category name
